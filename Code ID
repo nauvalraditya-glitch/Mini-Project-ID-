@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() {
+    char nama[20];
+    char hobi[20];
+    int umur;
+
+    // 3 input dari terminal
+    printf("Masukkan Nama Awal : ");
+    scanf(" %20[^\n]", nama);
+
+    printf("Masukkan Hobi      : ");
+    scanf(" %20[^\n]", hobi);
+
+    printf("Masukkan Umur      : ");
+    scanf("%d", &umur);
+
+    // Ambil huruf awal dari nama dan hobi
+    char inisialNama = nama[0];
+    char inisialHobi = hobi[0];
+
+    // Operasi 1: umur dikali 2
+    int umurKali2 = umur * 2;
+
+    // Operasi 2: kode ASCII huruf awal nama ditambah kode ASCII huruf awal hobi
+    int jumlahAscii = inisialNama + inisialHobi;
+
+    // Konkatenasi jadi ID 10 karakter pakai sprintf
+    char id[11];
+    sprintf(id, "%c%04d%04d%c", inisialNama, umurKali2, jumlahAscii, inisialHobi);
+
+    printf("\n-------------------------------\n");
+    printf("Nama Awal : %s\n", nama);
+    printf("Hobi      : %s\n", hobi);
+    printf("Umur      : %d\n", umur);
+    printf("ID        : %s\n", id);
+    printf("-------------------------------\n");
+
+    return 0;
+}
