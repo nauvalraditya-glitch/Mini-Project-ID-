@@ -8,9 +8,9 @@ Output di atas dihasilkan dari 3 input menggunakan tipe data char dan int.
 Di mana char berfungsi untuk menyimpan karakter dari nama dan hobi,
 sedangkan int berfungsi untuk menyimpan bilangan bulat dari umur.
 Operasi yang digunakan untuk menghasilkan ID adalah umur dikali 2 dan menggunakan jumlah dari kode ASCII dari huruf awal nama dan hobi.
-Kode ini menggunakan sprintf, output dari sprintf ini tidak langsung ditampilkan di layar melainkan disimpan di variabel ID.
+Prpgeam ini menggunakan sprintf, output dari sprintf ini tidak langsung ditampilkan di layar melainkan disimpan di variabel ID.
 
-Penjelasan dari kode ID yang saya buat :
+Penjelasan dari program ID yang saya buat :
 1. char [20] = menyimpan 20 karakter.
 2.  %20[^\n] artinya "baca semua karakter yang bukan newline, maksimal 20 huruf", Spasi di depan (" %20...") berfungsi buat "membersihkan" sisa enter/newline yang mungkin masih nyangkut di buffer dari input sebelumnya.
 3. nama[0] = menyimpan huruf awal dari nama dan berlaku untuk hobi juga.
